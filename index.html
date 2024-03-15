@@ -7,7 +7,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,358 +16,7 @@
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 		
 
-    <style>
-    /* Add all your styles here */
-
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Encode Sans Condensed', sans-serif;
-  box-sizing: border-box;
-}
-
-.header{
- min-height: 100vh;
- width: 100%;
- background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://i.postimg.cc/NG35tdRH/BG-2.jpg);
- background-position: center;
- background-size: cover;
- position : relative;
-}
-
-
-nav{
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-item: center;
-}
-
-nav img{
-  width: 163px;
-}
-
-.nav-links{
-  flex: 1;
-  text-align: right;
-}
-
-.nav-links ul li{
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-
-.nav-links ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.nav-links ul li::after{
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #00ff03;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-
-.nav-links ul li:hover::after{
-  width: 100%;
-}
-
-.text-box{
-  width: 90%;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
-
-.text-box h1{
-  font-size: 62px;
-  font-family: 'REM', sans-serif;
-}
-
-.text-box p{
-  margin: 10px 0 40px;
-  font-size: 14px;
-  color: #fff;
-  font-family: 'Kanit', sans-serif;
-}
-
-
-.hero-btn{
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 12px 34px;
-  font-size: 13px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-}
-
-.hero-btn:hover{
-  border: 1px solid #58f43d;
-  background: #58f43d;
-  color: black;
-  transition: 1s;
-}
-
-.mein{
-  color: red;
-  text-align: center;
-}
-
-
-
-.mo-menu{
-  flex: 1;
-  text-align: right;
-  display: none;
-}
-
-.mo-menu ul li{
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-
-
-.mo-menu ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 9px;
-}
-
-
-.mo-menu ul li::after{
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #00ff03;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-
-.mo-menu ul li:hover::after{
-  width: 100%;
-}
-
-
-
-@media(max-width: 700px){
-  	.text-box h1{
-  	  font-size: 20px;
-  }
-  
-  .nav-links ul li{
-    display: block;
-  }
-  
-  .nav-links{
-    display: none;
-  }
-  .mo-menu{
-   display: block;
- }
-}
-
-
-
-
-
-.xxx{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.call{
-    margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://i.postimg.cc/NjpsznZm/jezael-melgoza-2-Fi-Xtdn-Vhj-Q-unsplash-1.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.call h1{
-    color: #fff;
-    margin: 40px;
-    padding: 0;
-    font-size: 36px;
-}
-
-@media(max-width: 700px){
-   .call h1{
-       font-size: 24px;
-   }
-}
-
-
-.nagad{
-    padding-bottom: 100px;
-}
-
-
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-    background-color: #00093c;
-    font-family: 'Encode Sans Condensed', sans-serif;
-}
-
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-    padding-top: 10px;
-    font-size: 30px;
-    color: #9bff6a;
-}
-
-.footer p{
-    font-size: 15px;
-    color: #51f390;
-    font-family: 'Encode Sans Condensed', sans-serif;
-}
-
-.icons i{
-    margin: 0 13px;
-    color: #00ff03;
-    cursor: pointer;
-    padding: 18px 0;
-    font-size: 40px;
-}
-
-
-
-
-.usl{
-    justify-content: space-between;
-    display: flex;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.uslx a{
-    text-decoration: none;
-    color: #65c2f3;
-    font-size: 15px;
-}
-
-.uslx a:hover{
-    color: #e9a2f3;
-}
-
-.copyright p{
-    padding-top: 15px;
-    color: #fff;
-    font-size: 18px;
-}
-
-
-@media(max-width: 700px){
-    .footer h4{
-        font-size: 20px;
-    }
-    
-    .footer p{
-        font-size: 13px;
-    }
-    .uslx a{
-        font-size: 14px;
-    }
-    
-    .icons i{
-        font-size: 25px;
-    }
-    
-    .copyright p{
-        font-size: 12px;
-    }
-    
-    .usl{
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-}
-
-
-
-.blogs-main{
-    padding-top: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.blogs-main p{
-    text-align: center;
-    font-size: 50px;
-    color: #006073;
-}
-
-.blog1{
-    padding: 10px;
-    background: #00d5ff62;
-    border-radius: 10px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-}
-
-.bl-Aa-image img{
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-
-
-.bl-Aa-text{
-    padding: 10px;
-}
-.bl-Aa-text h5{
-    color: #000000;
-    font-size: 20px;
-    padding-bottom: 3px;
-}
-
-.bl-Aa-text p{
-    color: #2f2f2fb1;
-    font-size: 15px;
-    text-align: left;
-}
-
-.bl-Aa-text a{
-    text-decoration: none;
-    color: #00a561;
-}
-
-.bl-Aa-text a:hover{
-    color: #ff00c7;
-}
-
-
-
-    </style>
-    
+ 
 </head>
 
 
@@ -424,22 +73,52 @@ nav img{
     
     
     
-    
+    <div class="hbm">
     <div class="blog1">
         
         <div class="bl-Aa-image">
             <img src="https://i.postimg.cc/1X5JSxs2/31168142.jpg" alt="No Image" height="100px" width="150px">
             
-        <hr>
-         <div>
+        
+         </div>
             
             <div class="bl-Aa-text">
                 <h5>Development Description for Your TopUp Center Website</h5>
                 <p>Hlw Friends. Welcome To Our Website . আমাদোর এই ওয়েবসাইটটি শিগরিই ফুল আপডেট করে পাবলিশ করা হবে । এই ওয়েবসাইটের ডেবলোপার শুধু আমি । তাছাড়া আমি খুব একটা ওয়েব ডেভলপমেন্ট করতে পারি না .... <a href="https://yourtopupcenter.github.io/Blogs_Development-Description-for-Your-TopUp-Center-Website/">Read More</a>
-             <div>
+             </div>
+        
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    <div class="hbm">
+    <div class="blog1">
+        
+        <div class="bl-Aa-image">
+            <img src="https://i.postimg.cc/QxdCPkH0/Blog-2.jpg" alt="No Image" height="100px" width="150px">
+            
+        
+         </div>
+            
+            <div class="bl-Aa-text">
+                <h5>YTC - FACEBOOK Page Post Type Changing Alart - Blog 2</h5>
+                <p>Hey buddys, কি অবস্থা সবার..? #YTC24 - এর সর্বোমোট ৪ টি ফেসবুক পেজ রয়েছে ।  যেখানে দুটোতে Your TopUp Center - এর কার্যক্রম Host হয় ।  আর বাকি দুটোতে গল্প, ক্যাপশন, আড্ডামুলক পোস্ট দেওয়া হতো .... <a href="https://yourtopupcenter.github.io/Blogs/FACEBOOK_Page_Post_Type_Changing_Alart.html">Read More</a>
+             </div>
         
         
     </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
     
 </section>
 
@@ -517,7 +196,7 @@ nav img{
 
 <div class="copyright">
     
-    <p>All Rights Reserved by © FF Diamond Store BD 2022-2024 &nbsp; | &nbsp; v 2.3 </p>
+    <p>All Rights Reserved by © FF Diamond Store BD 2022-2024 &nbsp; | &nbsp; v 2.4 </p>
     </div>
 </section>
 <!--main js-->
