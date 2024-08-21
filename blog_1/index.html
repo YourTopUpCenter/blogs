@@ -1,0 +1,795 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Development Description for Your TopUp Center Website | Your TopUp Center  </title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@200;400;600;700&family=Kanit:wght@100;200;400;600;800&family=REM:wght@400;600&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,300&display=swap" rel="stylesheet">
+
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+		 
+		 <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6537b04a6cbe720012c5e369&product=inline-share-buttons&source=platform" async="async"></script>
+		
+
+    <style>
+    /* Add all your styles here */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  box-sizing: border-box;
+}
+
+.header{
+ min-height: 100vh;
+ width: 100%;
+ background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://i.postimg.cc/NG35tdRH/BG-2.jpg);
+ background-position: center;
+ background-size: cover;
+ position : relative;
+}
+
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-item: center;
+}
+
+nav img{
+  width: 150px;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #00ff03;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 62px;
+  font-family: 'REM', sans-serif;
+}
+
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Kanit', sans-serif;
+}
+
+.text-box h3{
+    color: #00ff96;
+    font-size: 30px;
+}
+
+
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  border: 1px solid #58f43d;
+  background: #58f43d;
+  color: black;
+  transition: 1s;
+}
+
+.mein{
+  color: red;
+  text-align: center;
+}
+
+
+
+.mo-menu{
+  flex: 1;
+  text-align: right;
+  display: none;
+}
+
+.mo-menu ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+
+.mo-menu ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 9px;
+}
+
+
+.mo-menu ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #00ff03;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+
+.mo-menu ul li:hover::after{
+  width: 100%;
+}
+
+
+
+@media(max-width: 700px){
+  	.text-box h1{
+  	  font-size: 20px;
+  }
+  
+  .nav-links ul li{
+    display: block;
+  }
+  
+  .nav-links{
+    display: none;
+  }
+  .mo-menu{
+   display: block;
+ }
+}
+
+
+
+
+
+.hotpro{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight : 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotpro-col{
+    flex-basis: 31%;
+    background: #57f13c6a;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 17px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+.hotpro-col a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #080078;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.hotpro-col:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.8);
+}
+
+@media(max-width: 700px){
+   .row{
+       flex-direction: column;
+   }
+}
+
+.trusted{
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.trusted h1{
+    font-size: 35px;
+    color: #045d5d;
+}
+.trusted p{
+    color: #008080;
+    font-size: 15px;
+}
+
+.tr{
+    padding-top: 20px;
+}
+.xxx{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tr h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.tr p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+.low{
+    padding-top: 15px;
+}
+
+.low h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.low p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+.delivery{
+    padding-top: 15px;
+}
+
+.delivery h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.delivery p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+.coustomer{
+    padding-top: 15px;
+}
+
+.coustomer h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.coustomer p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+.pay{
+    padding-top: 15px;
+}
+
+.pay h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.pay p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+
+
+.call{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://i.postimg.cc/NjpsznZm/jezael-melgoza-2-Fi-Xtdn-Vhj-Q-unsplash-1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.call h1{
+    color: #fff;
+    margin: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+   .call h1{
+       font-size: 24px;
+   }
+}
+
+
+.nagad{
+    padding-bottom: 100px;
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #00093c;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 30px;
+    color: #9bff6a;
+}
+
+.footer p{
+    font-size: 15px;
+    color: #51f390;
+}
+
+.icons i{
+    margin: 0 13px;
+    color: #00ff03;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 40px;
+}
+
+
+
+
+.usl{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.uslx a{
+    text-decoration: none;
+    color: #65c2f3;
+    font-size: 15px;
+}
+
+.uslx a:hover{
+    color: #e9a2f3;
+}
+
+.copyright p{
+    padding-top: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+@media(max-width: 700px){
+    .footer h4{
+        font-size: 20px;
+    }
+    
+    .footer p{
+        font-size: 13px;
+    }
+    .uslx a{
+        font-size: 14px;
+    }
+    
+    .icons i{
+        font-size: 25px;
+    }
+    
+    .copyright p{
+        font-size: 12px;
+    }
+    .usl{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+
+
+
+
+.mainBlog{
+    padding: 5px;
+    padding-top: 50px;
+}
+
+.bHead h1{
+    padding: 10px;
+    font-size: 35px;
+    color: #0018ff;
+    padding-bottom: 30px;
+}
+
+.bHead img{
+    border-radius: 10px;
+}
+
+.bHead h4{
+    padding: 5px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.bHead p{
+    font-size: 15px;
+}
+
+.bHead p b{
+    color: #00abbaba;
+}
+
+.bMain p{
+    color: black;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bMain p a{
+    text-decoration: none;
+    color: #ff0a00;
+    
+}
+
+
+.bEnd{
+    padding-top: 50px;
+    padding-left: 25px;
+}
+
+.bEnd .bTag p{
+    font-size: 22px;
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.bEnd .bTag p b{
+    color: #26e185;
+    font-size: 22px;
+}
+
+.bEnd .bTag p I{
+    color: black;
+    font-size: 18px;
+}
+
+.bEnd .bCat p{
+    font-size: 22px;
+    color: red;
+}
+.bEnd .bCat p b{
+    color: #26e185;
+    font-size: 22px;
+}
+
+.bEnd .bCat p I{
+    color: black;
+    font-size: 18px;
+}
+
+
+.sharethis-inline-share-buttons{
+    padding-top: 5px;
+}
+
+#shear-on{
+    font-size: 15px;
+    padding-left: 55px;
+}
+
+@media(max-width: 700px){
+    .text-box h3{
+        font-size: 15px;
+    }
+    
+    .mainBlog{
+        padding-top: 25px;
+    }
+    
+    .bHead h1{
+        font-size: 25px;
+    }
+    
+    .bHead img{
+    border-radius: 10px;
+    height: 263px;
+    width: 398px;
+    }
+    
+    .bMain p{
+        font-size: 20px;
+    }
+}
+
+
+
+.follow{
+    padding-top: 30px;
+    padding-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.follow h2{
+    text-decoration: none;
+    font-size: 25px;
+    padding-top: 10px;
+    color: #000000;
+}
+
+.follow p a{
+    font-size: 20px;
+    color: #008e8e;
+}
+
+.follow p i{
+    font-size: 22px;
+}
+
+
+    </style>
+    
+</head>
+
+
+<body>
+
+<section class="header">
+		<nav>
+			<a href="https://yourtopupcenter.github.io/home"><img src="https://i.postimg.cc/zX4xWrNt/IMG-1691231564314.png"></a>
+			  <div class="nav-links">
+			    <ul>
+			      <li><a href="https://yourtopupcenter.github.io/home">HOME</a></li>
+			      <li><a href="https://yourtopupcenter.github.io/Products">PRODUCTS</a></li>
+			      <li><a href="https://yourtopupcenter.github.io/Offers">OFFER</a></li>
+			      <li><a href="https://yourtopupcenter.github.io/Blogs">BLOGS</a></li>
+			      <li><a href="https://yourtopupcenter.github.io/About">ABOUT</a></li>
+			      <li><a href="https://yourtopupcenter.github.io/ContactUs">CONTACT Us</a></li>
+			    </ul>
+			     
+			  </div>
+			  
+			 
+			 </div>
+			 
+
+<div class="mo-menu">
+
+<ul>
+			      <li><a href="https://yourtopupcenter.github.io/home">HOME</a></li>
+			      <li><a href="https://yourtopupcenter.github.io/Products">PRODUCTS</a></li>
+			      <li><a href="https://yourtopupcenter.github.io/Dashboard">•••</a></li>
+
+</div>
+		</nav>
+
+<div class="text-box">
+	<h1>Your TopUp Center</h1>
+	<p>Your Best Game Patner <br>Trusted, Low Price, Secure, Instant Delivery</p>
+	<a href="https://yourtopupcenter.github.io/Products" class="hero-btn">See Our Products</a>
+	<p>&nbsp;</p>
+	<h3>Your Blog is Below</h3>
+	
+
+</div>
+
+
+</section>
+
+<!--Blog-->
+
+
+<section class="mainBlog">
+    
+    <div class="bHead">
+        <h1> Development Description for Your TopUp Center Website </h1>
+        
+        <img src="https://i.postimg.cc/1X5JSxs2/31168142.jpg" class="xxx" height="400px" width="630px" alt="Loading...">
+        
+        <h4>29/10/2023 &nbsp; 5:00pm</h4> 
+        <p>Posted by <b>ADMIN</b></p>
+    </div>
+    
+    
+    <div class="bMain">
+        <p>Hlw Friends. Welcome To Our Website . আমাদোর এই ওয়েবসাইটটি শিগরিই ফুল আপডেট করে পাবলিশ করা হবে । এই ওয়েবসাইটের ডেবলোপার শুধু আমি । তাছাড়া আমি খুব একটা ওয়েব ডেভলপমেন্ট করতে পারি না । অনেকদিনের ইচ্ছা ছিলো নিজের ওয়েবসাইট থাকবে । আল্লাহ তায়ালার অশেষ রহমতে আজ এই ছোট্ট একটা ওয়েবসাইটটি তৈরি করতে পেরেছি । এই সাইটের অনেক ডেভলপমেন্ট দরকার । অনেক নতুন নতুন ফিচার দরকার । <b>এই সাইটটি মুলত আমার TopUp Center এর মেইন সাইট হবে , এক সময় তোমরা এই সাইট থেকে টপআপ করতে পারবে </b>। তোমারা কী কী ফিচার চাও, আমার <a href="#">ফেসবুক পেজে</a> মেসেজের মাধ্যমে জানাও ।<br><br>
+
+প্রত্যেক সপ্তাহে সাইটটি আপডেট করা হবে । তাছাড়া প্রত্যেকদিন ছোট্ট ছোট্ট আপডেট আসবে । আমাদের ওয়েবসাইটি Proper Update এর আগেই, আমাদের TopUp Center টি চলার মতো Blog Post / Offer Post / Development Post এর মতো কিছু Article পাবলিশ করা হবে । আর, আমাদের Facebook Page এ কোনো কিছু পোস্ট করার আগে ওয়েবসাইটে পোস্ট করা হবে । তাই সবার আগে আমাদের আপডেট পেতে এই সাইটটি নিয়মিত ভিজিট করো । অনেকেই এটা ভেবে অবাক হচ্ছো যে, আমাদের TopUp Center এর নাম "FF Diamond Store BD" । তাহলে, আমাদোর ওয়েবসাইটের নাম "Your TopUp Center" কেনো হলো ? আসলে, ধীরে ধীরে আমি আরও Products যোগ করব । আমি আগে শুধু Garena Free Fire এর টপআপ সেল করতাম, কিন্তু শিগরিই আমি আরও Products যোগ করব । তোমরা এখানে প্রায় সব গেমের TopUp, Voucher, Gift Card সহ অনেক কিছু পাবে ।<b> আমি শুধু আরেকটা Products যোগ করেই আমাদের পেজ সহো যাবতীয় সব জায়গায় "FF Diamond Store BD" এর পরিবর্তে Your TopUp Center নামে পরিবর্তন হয়ে যাবে । মূলত, আমাদের Company এর নাম হবে "Your TopUp Center" । </b><br><br>
+
+Thanks You Everyone !</p>
+
+<div class="follow">
+    <h2> ⚼ &nbsp; For More Update...</h2>
+    <p><a href="https://www.facebook.com/profile.php?id=100088285495507"><i class="fa-brands fa-facebook" style="color: blue;"></i></a> &nbsp; <a href="https://www.facebook.com/profile.php?id=100088285495507"> Follow Our Facebook Page</a>  <br> <a href="https://youtube.com/@kingofthekilar-1414"><i class="fa-brands fa-youtube" style="color: red;"></i></a> &nbsp; <a href="https://youtube.com/@kingofthekilar-1414"> Subscribe Our Channel</a> <br>  <a href="https://t.me/yourtopupcenter"><i class="fa-brands fa-telegram" style="color: #002dffc4;"></i></a> &nbsp; <a href="https://t.me/yourtopupcenter"> Join Our Teligram Channel</a>  <br>  <a href="https://wa.me/message/KMQOSZQOY7BXB1"><i class="fa-brands fa-whatsapp" style="color: #11ff00"></i></a> &nbsp; <a href="https://wa.me/message/KMQOSZQOY7BXB1"> Massage Us on WhatsApp</a> </p>
+    </div>
+    <div>
+    
+    
+    <div class="bEnd">
+        
+        <div class="bTag">
+        <p> ⚑ <b>Tags</b><br><I>website_development, blog_post, notice, <a href="https://www.google.com/search?q=%23ffdsbd24" target="_blank">#ffdsbd24</a>, <a href="https://www.google.com/search?q=%23ytc24" target="_blank">#ytc24</a>, website, fb_page, #ff, #products, #topup, #weekly, #monthly </I></p>
+        </div>
+        
+        <div class="bCat">
+            <p> ⛛ <b>Category</b><br><I>Website_Updates, Notice  </I></p>
+        </div>
+    </div>
+    
+    <p id="shear-on">Shear On...</p>
+    <div class="sharethis-inline-share-buttons"></div>
+    
+    
+</section>
+
+
+
+
+
+<section class="call">
+    <h1>For Any Support,  Help,  Problem,  Report,  Investment,  Partnership, or  Advisement </h1>
+    <a href="https://yourtopupcenter.github.io/ContactUs" class="hero-btn">Contact Us</a>
+</section>
+
+
+
+
+<div class="nagad">
+  
+
+<img src="https://i.postimg.cc/yxk7V814/Picsart-23-09-08-21-30-44-449.png" alt="No image" height="150px" width="350px" class="xxx">
+
+</div>
+<section class="footer">
+    
+    <h4>About Us</h4>
+    <p>Top-up your favorite game credits at  " Your TopUp Center " ,  your trusted online digital game store. You get your game credits fast in just 5 - 10 minutes. You can order by following just a few steps. Buy safely online with Nagad, bKash, Rocket. Our  " Your TopUp Center "  platform is a safe and reliable platform.</p>
+    
+    
+        
+
+<h4>Important Links</h4>
+
+<div class="usl">
+            
+            
+            <div class="uslx">
+                
+            <a href="https://yourtopupcenter.github.io/home">Home</a>
+            <P></P>
+            <a href="https://yourtopupcenter.github.io/Products">Products</a>
+            <p></p>
+            <a href="https://yourtopupcenter.github.io/Offers">Offers</a>
+            <p></p>
+            <a href="#">FAQ</a>
+            
+        </div>
+        
+         
+            <div class="uslx">
+                
+            <a href="https://yourtopupcenter.github.io/Blogs">Blogs</a>
+            <p></p>
+            <a href="#">Reseller Platform</a>
+            <p></p>
+            <a href="https://yourtopupcenter.github.io/About">About Us</a>
+            <p></p>
+            <a href="https://yourtopupcenter.github.io/ContactUs">Contact Us</a>
+        </div>
+        
+        
+        </div>
+    
+    
+    
+    
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100088285495507"><i class="fa-brands fa-facebook"></a></i>
+        <a href="https://youtube.com/@kingofthekilar-1414"><i class="fa-brands fa-youtube"></a></i>
+        <a href="https://t.me/yourtopupcenter"><i class="fa-brands fa-telegram"></a></i>
+        <a href="#"><i class="fa-solid fa-user-group"></i></a>
+        <a href="https://wa.me/message/KMQOSZQOY7BXB1"><i class="fa-brands fa-whatsapp"></a></i>
+    </div> 
+
+
+
+<div class="copyright">
+    
+    <p>All Rights Reserved by © FF Diamond Store BD 2022-2023 &nbsp; | &nbsp; v 1.2 </p>
+    </div>
+</section>
+<!--main js-->
+<script src="js/main.js">
+    
+   </script>
+</body>
+
+
+    </html>
